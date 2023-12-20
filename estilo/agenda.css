@@ -1,0 +1,30 @@
+/**********
+ Autora: María Teresa Fernández Coro, UO263728
+ Descripcion de los Estilos de la Agenda
+**********/
+
+/* Especificidad: 001 */
+input {
+    padding: 0.5em 1em;
+    border: 0.05em solid #695643;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+/* Especificidad: 011, 001 */
+section:first-of-type,
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.7em rgba(0, 0, 0, 0.1);
+    padding: 1em;
+}
+
+/* Especificidad: 002 */
+section p {
+    margin-top: 0.15em;
+}

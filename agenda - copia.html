@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Autor -->
+    <meta name="author" content="María Teresa Fernández Coro, UO263728">
+    <!-- Descripción -->
+    <meta name="description" content="Agenda con información de la F1">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="Agenda, F1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título -->
+    <title>Escritorio Virtual | Agenda</title>
+    <!-- Enlace al icono del sitio web -->
+    <link rel="icon" href="multimedia/favicon.ico" sizes="32x32" type="image/ico">
+    <!-- Enlace al archivo JavaScript utilizando la opción minificada de jQuery Core 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/agenda.js"></script>
+    <!-- Enlace a las hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/agenda.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <a title="Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title="Sobre mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre mi</a>
+            <a title="Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title="Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title="Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title="Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title="Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <h2>Agenda</h2>
+    <article>
+        <h3>Información de esta temporada de las Carreras F1</h3>
+        <input type="button" name="infoF1" value="Obtener Información" onclick="agenda.getCarrerasF1()"><section><h4>Carrera: Abu Dhabi Grand Prix</h4><p>Circuito: Yas Marina Circuit</p><p>Coordenadas: Latitud 24.4672, Longitud 54.6031</p><p>Ubicación: Abu Dhabi, UAE</p><p>Fecha y Hora: 2023-11-26, 13:00:00Z</p></section><section><h4>Carrera: Las Vegas Grand Prix</h4><p>Circuito: Las Vegas Strip Street Circuit</p><p>Coordenadas: Latitud 36.1147, Longitud -115.173</p><p>Ubicación: Las Vegas, United States</p><p>Fecha y Hora: 2023-11-19, 06:00:00Z</p></section><section><h4>Carrera: São Paulo Grand Prix</h4><p>Circuito: Autódromo José Carlos Pace</p><p>Coordenadas: Latitud -23.7036, Longitud -46.6997</p><p>Ubicación: São Paulo, Brazil</p><p>Fecha y Hora: 2023-11-05, 17:00:00Z</p></section><section><h4>Carrera: Mexico City Grand Prix</h4><p>Circuito: Autódromo Hermanos Rodríguez</p><p>Coordenadas: Latitud 19.4042, Longitud -99.0907</p><p>Ubicación: Mexico City, Mexico</p><p>Fecha y Hora: 2023-10-29, 20:00:00Z</p></section><section><h4>Carrera: United States Grand Prix</h4><p>Circuito: Circuit of the Americas</p><p>Coordenadas: Latitud 30.1328, Longitud -97.6411</p><p>Ubicación: Austin, USA</p><p>Fecha y Hora: 2023-10-22, 19:00:00Z</p></section><section><h4>Carrera: Qatar Grand Prix</h4><p>Circuito: Losail International Circuit</p><p>Coordenadas: Latitud 25.49, Longitud 51.4542</p><p>Ubicación: Al Daayen, Qatar</p><p>Fecha y Hora: 2023-10-08, 17:00:00Z</p></section><section><h4>Carrera: Japanese Grand Prix</h4><p>Circuito: Suzuka Circuit</p><p>Coordenadas: Latitud 34.8431, Longitud 136.541</p><p>Ubicación: Suzuka, Japan</p><p>Fecha y Hora: 2023-09-24, 05:00:00Z</p></section><section><h4>Carrera: Singapore Grand Prix</h4><p>Circuito: Marina Bay Street Circuit</p><p>Coordenadas: Latitud 1.2914, Longitud 103.864</p><p>Ubicación: Marina Bay, Singapore</p><p>Fecha y Hora: 2023-09-17, 12:00:00Z</p></section><section><h4>Carrera: Italian Grand Prix</h4><p>Circuito: Autodromo Nazionale di Monza</p><p>Coordenadas: Latitud 45.6156, Longitud 9.28111</p><p>Ubicación: Monza, Italy</p><p>Fecha y Hora: 2023-09-03, 13:00:00Z</p></section><section><h4>Carrera: Dutch Grand Prix</h4><p>Circuito: Circuit Park Zandvoort</p><p>Coordenadas: Latitud 52.3888, Longitud 4.54092</p><p>Ubicación: Zandvoort, Netherlands</p><p>Fecha y Hora: 2023-08-27, 13:00:00Z</p></section><section><h4>Carrera: Belgian Grand Prix</h4><p>Circuito: Circuit de Spa-Francorchamps</p><p>Coordenadas: Latitud 50.4372, Longitud 5.97139</p><p>Ubicación: Spa, Belgium</p><p>Fecha y Hora: 2023-07-30, 13:00:00Z</p></section><section><h4>Carrera: Hungarian Grand Prix</h4><p>Circuito: Hungaroring</p><p>Coordenadas: Latitud 47.5789, Longitud 19.2486</p><p>Ubicación: Budapest, Hungary</p><p>Fecha y Hora: 2023-07-23, 13:00:00Z</p></section><section><h4>Carrera: British Grand Prix</h4><p>Circuito: Silverstone Circuit</p><p>Coordenadas: Latitud 52.0786, Longitud -1.01694</p><p>Ubicación: Silverstone, UK</p><p>Fecha y Hora: 2023-07-09, 14:00:00Z</p></section><section><h4>Carrera: Austrian Grand Prix</h4><p>Circuito: Red Bull Ring</p><p>Coordenadas: Latitud 47.2197, Longitud 14.7647</p><p>Ubicación: Spielberg, Austria</p><p>Fecha y Hora: 2023-07-02, 13:00:00Z</p></section><section><h4>Carrera: Canadian Grand Prix</h4><p>Circuito: Circuit Gilles Villeneuve</p><p>Coordenadas: Latitud 45.5, Longitud -73.5228</p><p>Ubicación: Montreal, Canada</p><p>Fecha y Hora: 2023-06-18, 18:00:00Z</p></section><section><h4>Carrera: Spanish Grand Prix</h4><p>Circuito: Circuit de Barcelona-Catalunya</p><p>Coordenadas: Latitud 41.57, Longitud 2.26111</p><p>Ubicación: Montmeló, Spain</p><p>Fecha y Hora: 2023-06-04, 13:00:00Z</p></section><section><h4>Carrera: Monaco Grand Prix</h4><p>Circuito: Circuit de Monaco</p><p>Coordenadas: Latitud 43.7347, Longitud 7.42056</p><p>Ubicación: Monte-Carlo, Monaco</p><p>Fecha y Hora: 2023-05-28, 13:00:00Z</p></section><section><h4>Carrera: Miami Grand Prix</h4><p>Circuito: Miami International Autodrome</p><p>Coordenadas: Latitud 25.9581, Longitud -80.2389</p><p>Ubicación: Miami, USA</p><p>Fecha y Hora: 2023-05-07, 19:30:00Z</p></section><section><h4>Carrera: Azerbaijan Grand Prix</h4><p>Circuito: Baku City Circuit</p><p>Coordenadas: Latitud 40.3725, Longitud 49.8533</p><p>Ubicación: Baku, Azerbaijan</p><p>Fecha y Hora: 2023-04-30, 11:00:00Z</p></section><section><h4>Carrera: Australian Grand Prix</h4><p>Circuito: Albert Park Grand Prix Circuit</p><p>Coordenadas: Latitud -37.8497, Longitud 144.968</p><p>Ubicación: Melbourne, Australia</p><p>Fecha y Hora: 2023-04-02, 05:00:00Z</p></section><section><h4>Carrera: Saudi Arabian Grand Prix</h4><p>Circuito: Jeddah Corniche Circuit</p><p>Coordenadas: Latitud 21.6319, Longitud 39.1044</p><p>Ubicación: Jeddah, Saudi Arabia</p><p>Fecha y Hora: 2023-03-19, 17:00:00Z</p></section><section><h4>Carrera: Bahrain Grand Prix</h4><p>Circuito: Bahrain International Circuit</p><p>Coordenadas: Latitud 26.0325, Longitud 50.5106</p><p>Ubicación: Sakhir, Bahrain</p><p>Fecha y Hora: 2023-03-05, 15:00:00Z</p></section>
+    </article>
+    <script>
+        const agenda = new Agenda('https://ergast.com/api/f1/current');
+    </script>
+
+
+</body></html>

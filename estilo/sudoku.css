@@ -1,0 +1,63 @@
+/**********
+ Autora: María Teresa Fernández Coro, UO263728
+ Descripcion de los Estilos del Sudoku
+**********/
+
+/* Especificidad: 001 */
+h3 {
+    text-align: center;
+}
+
+/* Especificidad: 001 */
+main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    border-top: 0.1em solid #000;
+    border-left: 0.1em solid #000;
+    border-bottom: 0.1em solid #000;
+    width: 40vw;
+    height: 40vw;
+    margin: auto;
+}
+
+/* Especificidad: 001 */
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    border: 0.05em solid #858282;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Especificidad: 011 */
+p:nth-child(3n) {
+    border-right: 0.1em solid #000;
+}
+
+/* Especificidad: 021 */
+p:nth-child(n+19):nth-child(-n+27),
+p:nth-child(n+46):nth-child(-n+54) {
+    border-bottom: 0.1em solid #000;
+}
+
+/* Media queries para tamaños de pantalla específicos */
+@media screen and (max-width: 37.5em) {
+
+    /* Especificidad: 001 */
+    main {
+        /* Redefinido para su correcta visualización */
+        width: 90vw;
+        /* Redefinido para su correcta visualización */
+        height: 90vw;
+    }
+
+    /* Especificidad: 001 */
+    p {
+        /* Redefinido para su correcta visualización */
+        font-size: 3vw;
+    }
+
+}

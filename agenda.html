@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8" />
+    <!-- Autor -->
+    <meta name="author" content="María Teresa Fernández Coro, UO263728" />
+    <!-- Descripción -->
+    <meta name="description" content="Agenda con información de la F1" />
+    <!-- Palabras clave -->
+    <meta name="keywords" content="Agenda, F1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título -->
+    <title>Escritorio Virtual | Agenda</title>
+    <!-- Enlace al icono del sitio web -->
+    <link rel="icon" href="multimedia/favicon.ico" sizes="32x32" type="image/ico" />
+    <!-- Enlace al archivo JavaScript utilizando la opción minificada de jQuery Core 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/agenda.js"></script>
+    <!-- Enlace a las hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/agenda.css" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <a title="Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title="Sobre mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre mi</a>
+            <a title="Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title="Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title="Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title="Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title="Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <h2>Agenda</h2>
+    <article>
+        <h3>Información de esta temporada de las Carreras F1</h3>
+        <input type="button" name="infoF1" value="Obtener Información" onclick="agenda.getCarrerasF1()" />
+    </article>
+    <script>
+        const agenda = new Agenda('https://ergast.com/api/f1/current');
+    </script>
+</body>
+
+</html>

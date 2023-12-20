@@ -1,0 +1,17 @@
+/**********
+ Autora: María Teresa Fernández Coro, UO263728
+ Descripcion de los Estilos
+**********/
+
+/* Especificidad: 011 */
+input[type='button'] {
+    padding: 0.2em 0.5em;
+    border: 0.05em solid #695643;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+/* Especificidad: 001 */
+video {
+    padding-top: 1em;
+}

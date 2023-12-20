@@ -1,0 +1,96 @@
+/**********
+ Autora: María Teresa Fernández Coro, UO263728
+ Descripcion de los Estilos del Crucigrama
+**********/
+
+/* Especificidad: 001 */
+h3 {
+    text-align: center;
+    margin: 1em;
+}
+
+/* Especificidad: 001 */
+main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    width: 30em;
+    height: 25em;
+    margin: 1em auto;
+}
+
+/* Especificidad: 001 */
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.05em solid #000;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Especificidad: 010 */
+[data-state="empty"] {
+    /* Hereda el color de primer plano de body */
+    background-color: #000;
+}
+
+/* Especificidad: 011 */
+section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 0.5em;
+}
+
+/* Especificidad: 001 */
+form {
+    border-color: #695643;
+    border-radius: 0.3em;
+    border-style: double;
+    padding: 1em;
+    max-width: 35em;
+}
+
+/* Especificidad: 001 */
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+/* Especificidad: 011, 001 */
+input[type='text'] {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    box-sizing: border-box;
+}
+
+/* Especificidad: 011 */
+input[type='submit'] {
+    padding: 0.5em 1em;
+    border: 0.05em solid #695643;
+    border-radius: 0.25em;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 37.5em) {
+
+    /* Especificidad: 001 */
+    main {
+        /* Redefinido para su correcta visualización */
+        width: 90vw;
+        /* Redefinido para su correcta visualización */
+        height: auto;
+    }
+
+    /* Especificidad: 001 */
+    p {
+        font-size: 0.8em;
+    }
+
+}

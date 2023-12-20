@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Autor -->
+    <meta name="author" content="María Teresa Fernández Coro, UO263728">
+    <!-- Descripción -->
+    <meta name="descripcion" content="Juego de Crucigrama Matemático">
+    <!-- Palabras clave -->
+    <meta name="keywords" content="Juego, Crucigrama">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título -->
+    <title>Escritorio Virtual | Crucigrama</title>
+    <!-- Enlace al icono del sitio web -->
+    <link rel="icon" href="multimedia/favicon.ico" sizes="32x32" type="image/ico">
+    <!-- Enlace al archivo JavaScript utilizando la opción minificada de jQuery Core 3.x -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/crucigrama.js"></script>
+    <!-- Enlace a las hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/crucigrama.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <a title="Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title="Sobre mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre mi</a>
+            <a title="Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title="Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title="Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title="Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title="Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Juegos</h2>
+        <!-- Menú de acceso a los diferentes juegos -->
+        <nav>
+            <a title="Memoria" accesskey="E" tabindex="8" href="memoria.html">Memoria</a>
+            <a title="Sudoku" accesskey="U" tabindex="9" href="sudoku.html">Sudoku</a>
+            <a title="Crucigrama" accesskey="C" tabindex="10" href="crucigrama.php">Crucigrama</a>
+            <a title="API" accesskey="P" tabindex="11" href="api.html">API</a>
+            <a title="App PHP" accesskey="H" tabindex="12" href="app.html">APP PHP</a>
+        </nav>
+    </section>
+    <h3>Juego de Crucigrama Matemático</h3>
+    <main>
+        <!-- Tablero del juego -->
+    <p data-row="0" data-col="0" data-state="blocked">4</p><p data-row="0" data-col="1" data-state="blocked">*</p><p data-row="0" data-col="2" data-state="clicked"></p><p data-row="0" data-col="3" data-state="blocked">=</p><p data-row="0" data-col="4" data-state="blocked">12</p><p data-row="0" data-col="5" data-state="empty"></p><p data-row="0" data-col="6" data-state="empty"></p><p data-row="0" data-col="7" data-state="empty"></p><p data-row="0" data-col="8" data-state="blocked">5</p><p data-row="1" data-col="0" data-state="empty"></p><p data-row="1" data-col="1" data-state="empty"></p><p data-row="1" data-col="2" data-state="blocked">*</p><p data-row="1" data-col="3" data-state="empty"></p><p data-row="1" data-col="4" data-state="blocked">/</p><p data-row="1" data-col="5" data-state="empty"></p><p data-row="1" data-col="6" data-state="empty"></p><p data-row="1" data-col="7" data-state="empty"></p><p data-row="1" data-col="8" data-state="blocked">*</p><p data-row="2" data-col="0" data-state="blocked">4</p><p data-row="2" data-col="1" data-state="blocked">-</p><p data-row="2" data-col="2" data-state="correct">4</p><p data-row="2" data-col="3" data-state="blocked">=</p><p data-row="2" data-col="4" data-state="correct">3</p><p data-row="2" data-col="5" data-state="empty"></p><p data-row="2" data-col="6" data-state="blocked">15</p><p data-row="2" data-col="7" data-state="empty"></p><p data-row="2" data-col="8" data-state="correct">5</p><p data-row="3" data-col="0" data-state="blocked">*</p><p data-row="3" data-col="1" data-state="empty"></p><p data-row="3" data-col="2" data-state="blocked">=</p><p data-row="3" data-col="3" data-state="empty"></p><p data-row="3" data-col="4" data-state="blocked">=</p><p data-row="3" data-col="5" data-state="empty"></p><p data-row="3" data-col="6" data-state="blocked">/</p><p data-row="3" data-col="7" data-state="empty"></p><p data-row="3" data-col="8" data-state="blocked">=</p><p data-row="4" data-col="0" data-state="correct">2</p><p data-row="4" data-col="1" data-state="empty"></p><p data-row="4" data-col="2" data-state="blocked">3</p><p data-row="4" data-col="3" data-state="empty"></p><p data-row="4" data-col="4" data-state="blocked">4</p><p data-row="4" data-col="5" data-state="blocked">*</p><p data-row="4" data-col="6" data-state="correct">5</p><p data-row="4" data-col="7" data-state="blocked">=</p><p data-row="4" data-col="8" data-state="blocked">20</p><p data-row="5" data-col="0" data-state="blocked">=</p><p data-row="5" data-col="1" data-state="empty"></p><p data-row="5" data-col="2" data-state="empty"></p><p data-row="5" data-col="3" data-state="empty"></p><p data-row="5" data-col="4" data-state="empty"></p><p data-row="5" data-col="5" data-state="empty"></p><p data-row="5" data-col="6" data-state="blocked">=</p><p data-row="5" data-col="7" data-state="empty"></p><p data-row="5" data-col="8" data-state="empty"></p><p data-row="6" data-col="0" data-state="blocked">8</p><p data-row="6" data-col="1" data-state="empty"></p><p data-row="6" data-col="2" data-state="blocked">9</p><p data-row="6" data-col="3" data-state="blocked">-</p><p data-row="6" data-col="4" data-state="correct">6</p><p data-row="6" data-col="5" data-state="blocked">=</p><p data-row="6" data-col="6" data-state="blocked">3</p><p data-row="6" data-col="7" data-state="empty"></p><p data-row="6" data-col="8" data-state="correct">4</p><p data-row="7" data-col="0" data-state="empty"></p><p data-row="7" data-col="1" data-state="empty"></p><p data-row="7" data-col="2" data-state="blocked">-</p><p data-row="7" data-col="3" data-state="empty"></p><p data-row="7" data-col="4" data-state="blocked">+</p><p data-row="7" data-col="5" data-state="empty"></p><p data-row="7" data-col="6" data-state="empty"></p><p data-row="7" data-col="7" data-state="empty"></p><p data-row="7" data-col="8" data-state="blocked">*</p><p data-row="8" data-col="0" data-state="blocked">6</p><p data-row="8" data-col="1" data-state="blocked">/</p><p data-row="8" data-col="2" data-state="correct">3</p><p data-row="8" data-col="3" data-state="blocked">=</p><p data-row="8" data-col="4" data-state="correct">2</p><p data-row="8" data-col="5" data-state="empty"></p><p data-row="8" data-col="6" data-state="empty"></p><p data-row="8" data-col="7" data-state="empty"></p><p data-row="8" data-col="8" data-state="correct">4</p><p data-row="9" data-col="0" data-state="empty"></p><p data-row="9" data-col="1" data-state="empty"></p><p data-row="9" data-col="2" data-state="blocked">=</p><p data-row="9" data-col="3" data-state="empty"></p><p data-row="9" data-col="4" data-state="blocked">=</p><p data-row="9" data-col="5" data-state="empty"></p><p data-row="9" data-col="6" data-state="empty"></p><p data-row="9" data-col="7" data-state="empty"></p><p data-row="9" data-col="8" data-state="blocked">=</p><p data-row="10" data-col="0" data-state="empty"></p><p data-row="10" data-col="1" data-state="empty"></p><p data-row="10" data-col="2" data-state="blocked">6</p><p data-row="10" data-col="3" data-state="empty"></p><p data-row="10" data-col="4" data-state="blocked">8</p><p data-row="10" data-col="5" data-state="blocked">*</p><p data-row="10" data-col="6" data-state="correct">2</p><p data-row="10" data-col="7" data-state="blocked">=</p><p data-row="10" data-col="8" data-state="blocked">16</p></main><section><h4>Registro de un nuevo record</h4><form action="#" method="post"><label>Nombre de la persona:</label><input type="text" name="nombre" required=""><label>Apellidos:</label><input type="text" name="apellidos" required=""><label>Nivel:</label><input type="text" name="nivel" value="fácil" readonly=""><label>Tiempo empleado:</label><input type="text" name="tiempo" value="0:0:31" readonly=""><input type="submit" value="Enviar"></form></section>
+    <script>
+        const crucigrama = new Crucigrama();
+        crucigrama.paintMathword();
+        // Evento de teclado
+        document.addEventListener('keydown', (event) => {
+            const allowedKeys = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '+', '-', '*', '/'];
+            if (crucigrama.selectedCell) {
+                if (allowedKeys.includes(event.key)) {
+                    crucigrama.introduceElement(event.key);
+                } else {
+                    alert('Por favor, seleccione un número del 1 al 9 o uno de los siguientes: + - * /.');
+                }
+            } else {
+                alert('Por favor, seleccione una celda antes de pulsar un número.');
+            }
+        });
+    </script>
+
+
+</body></html>

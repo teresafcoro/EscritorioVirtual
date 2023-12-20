@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+    <!-- Datos que describen el documento -->
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8" />
+    <!-- Autor -->
+    <meta name="author" content="María Teresa Fernández Coro, UO263728" />
+    <!-- Descripción -->
+    <meta name="description" content="Juego de Sudoku" />
+    <!-- Palabras clave -->
+    <meta name="keywords" content="Juego, Sudoku" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título -->
+    <title>Escritorio Virtual | Sudoku</title>
+    <!-- Enlace al icono del sitio web -->
+    <link rel="icon" href="multimedia/favicon.ico" sizes="32x32" type="image/ico" />
+    <!-- Enlace al archivo JavaScript -->
+    <script src="js/sudoku.js"></script>
+    <!-- Enlace a las hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/sudoku.css" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <a title="Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title="Sobre mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre mi</a>
+            <a title="Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title="Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title="Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title="Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title="Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Juegos</h2>
+        <!-- Menú de acceso a los diferentes juegos -->
+        <nav>
+            <a title="Memoria" accesskey="E" tabindex="8" href="memoria.html">Memoria</a>
+            <a title="Sudoku" accesskey="U" tabindex="9" href="sudoku.html">Sudoku</a>
+            <a title="Crucigrama" accesskey="C" tabindex="10" href="crucigrama.php">Crucigrama</a>
+            <a title="API" accesskey="P" tabindex="11" href="api.html">API</a>
+            <a title="App PHP" accesskey="H" tabindex="12" href="app.html">APP PHP</a>
+        </nav>
+    </section>
+    <h3>Juego de Sudoku</h3>
+    <main>
+        <!-- Tablero del juego -->
+    </main>
+    <script>
+        const sudoku = new Sudoku();
+        sudoku.paintSudoku();
+        // Evento de teclado
+        document.addEventListener('keydown', function (event) {
+            if (sudoku.selectedCell) {
+                const numberPressed = parseInt(event.key);
+                if (!isNaN(numberPressed) && numberPressed >= 1 && numberPressed <= 9) {
+                    sudoku.introduceNumber(numberPressed);
+                } else {
+                    alert('Por favor, seleccione un número del 1 al 9.');
+                }
+            } else {
+                alert('Por favor, seleccione una celda antes de pulsar un número.');
+            }
+        });
+    </script>
+</body>
+
+</html>

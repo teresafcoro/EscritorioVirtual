@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <!-- Codificación de caracteres -->
+    <meta charset="UTF-8" />
+    <!-- Autor -->
+    <meta name ="author" content ="María Teresa Fernández Coro, UO263728" />
+    <!-- Descripción -->
+    <meta name="description" content="Información sobre el autor del sitio web" />
+    <!-- Palabras clave -->
+    <meta name="keywords" content="Sobre mi, Aficiones, Grupos musicales, cantantes, single, Asignaturas, Temperaturas" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- Título -->
+    <title>Escritorio Virtual | Sobre mi</title>
+    <!-- Enlace al icono del sitio web -->
+    <link rel="icon" href="multimedia/favicon.ico" sizes="32x32" type="image/ico" />
+    <!-- Enlace a las hojas de estilo -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <a title="Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title="Sobre mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre mi</a>
+            <a title="Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title="Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title="Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title="Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title="Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <section>
+        <!-- Información e imagen del autor del sitio web -->
+        <!-- Elemento div que agrupa el contenido de la información sobre mi de la sección -->
+        <div>
+            <h2>Sobre mi</h2>
+            <p>Mi nombre es María Teresa Fernández Coro.</p>
+            <p>Soy estudiante de Ingeniería Informática del Software en la Escuela de Ingeniería Informática del Software de Oviedo.</p>
+            <p>Mi identificador UO de la Universidad de Oviedo es UO263728.</p>
+            <p>Mi correo electrónico es uo263728@uniovi.es</p>
+        </div>
+        <picture>
+            <source media="(max-width: 799px)" srcset="multimedia/miFoto150.jpg" />
+            <source media="(min-width: 800px)" srcset="multimedia/miFoto300.jpg" />
+            <img src="multimedia/miFoto300.jpg" alt="¡Esta soy yo!" />
+        </picture>
+    </section>
+    <section>
+        <!-- Aficiones del autor del sitio web -->
+        <h2>Aficiones</h2>
+        <ul>
+            <li>Quedar con mis amigos</li>
+            <li>Leer libros en mi Kindle</li>
+            <li>Hacer planes con mi familia</li>
+            <li>Ir de compras</li>
+            <li>Viajar</li>
+            <li>Ir de ruta, senderismo</li>
+        </ul>
+    </section>
+    <section>
+        <!-- Grupos musicales o cantantes favoritos del autor del sitio web -->
+        <h2>Grupos musicales o cantantes favoritos</h2>
+        <ol>
+            <li>Billie Eilish</li>
+            <li>Miley Cyrus</li>
+            <li>Sen Senra</li>
+            <li>Alizzz</li>
+            <li>Izal
+                <ul>
+                    <li>Mikel Izal (cantante)</li>
+                    <li>Alejandro Jordá</li>
+                    <li>Emanuel Pérez “Gato”</li>
+                    <li>Alberto Pérez</li>
+                    <li>Iván Mella</li>
+                </ul>
+            </li>
+        </ol>
+        <h3>Último single</h3>
+        <p>¡Prueba a ver el videoclip del último single de Billie Eilish!</p>
+        <figure>
+            <video controls preload="auto">
+                <source src="multimedia/BillieEilish-WhatWasIMadeOf.mp4" type="video/mp4" />
+                <source src="multimedia/BillieEilish-WhatWasIMadeOf.webm" type="video/webm" />
+            </video>
+            <figcaption>Original Videoclip - Single "What Was I Made Of?" de Billie Eilish</figcaption>
+        </figure>
+        <p>O si prefieres, ¡prueba a escucharlo!</p>
+        <figure>
+            <audio controls> 
+                <source src="multimedia/BillieEilish-WhatWasIMadeOf.mp3" type="audio/mp3" />
+                <source src="multimedia/BillieEilish-WhatWasIMadeOf.wav" type="audio/wav" />
+            </audio>
+            <figcaption>Original Audio - Single "What Was I Made Of?" de Billie Eilish</figcaption>
+        </figure>
+    </section>
+    <section>
+        <!-- Asignaturas del grado que más le gustaron al autor del sitio web -->
+        <h2>Asignaturas del grado que más me han gustado</h2>
+        <dl>
+            <dt>Comunicación Persona-Máquina</dt>
+            <dd>Esta asignatura se enmarca dentro de la materia de Interacción y Multimedia, y en el módulo Común de Informática. Se imparte a continuación de la asignatura de "Tecnología y Paradigmas de Programación" del primer semestre. A esta materia corresponden también las asignaturas de "Software y Estándares para la Web", "Realidad y Accesibilidad Aumentadas" e "Informática Audiovisual".</dd>
+            <dt>Computabilidad</dt>
+            <dd>La asignatura de Computabilidad está incluida en el módulo de las asignaturas Comunes a la Informática, y dentro de la materia del Grado denominada Fundamentos Informáticos. Su impartición se desarrolla en el primer semestre del segundo curso del Grado. Esta asignatura es una continuación natural de otra incluida en el primer curso, denominada Autómatas y Matemáticas Discretas.</dd>
+            <dt>Algoritmia</dt>
+            <dd>Esta asignatura pertenece a la materia de Programación, y de forma transversal, al módulo Común de Informática. Se imparte en el segundo semestre de segundo curso y está muy relacionada con la asignatura de Estructura de Datos, que se imparte en el primer semestre del mismo curso. En esta asignatura se profundiza en el concepto de complejidad computacional, fundamental para poder comparar la eficiencia de distintos algoritmos.</dd>
+            <dt>Administración de Sistemas y Redes</dt>
+            <dd>La asignatura de Administración de Sistemas y Redes compone, junto con las asignaturas Sistemas Operativos, Sistemas Distribuidos e Internet y Seguridad de Sistemas Informáticos, la materia Sistemas Informáticos que se integra en el módulo Común de Informática.</dd>
+            <dt>Seguridad de Sistemas Informáticos</dt>
+            <dd>La asignatura de Seguridad de Sistemas Informáticos pertenece a la materia Sistemas Informáticos. A esta materia pertenece también la asignatura Sistemas Operativos y las asignaturas Sistemas Distribuidos e Internet y Administración de Sistemas y Redes, que se cursan al mismo tiempo que ésta en el sexto semestre del grado.</dd>
+        </dl>
+    </section>
+    <aside>
+        <!-- Temperaturas medias anuales de la ciudad del autor del sitio web -->
+        <h2>Temperaturas medias anuales de Oviedo</h2>
+        <table>
+            <caption>Temperaturas medias anuales de Oviedo en los últimos 10 años</caption>
+            <tr>
+                <th scope="col" id="año">Año</th>
+                <th scope="col" id="media">Media anual</th>
+                <th scope="col" id="maxima">Máxima media anual</th>
+                <th scope="col" id="minima">Mínima media anual</th>
+            </tr>
+            <tr>
+                <th scope="row" id="2022" headers="2022">2022</th>
+                <td headers="2022 media">14.0</td>
+                <td headers="2022 maxima">18.6</td>
+                <td headers="2022 minima">10.6</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2021" headers="2021">2021</th>
+                <td headers="2021 media">13.0</td>
+                <td headers="2021 maxima">17.4</td>
+                <td headers="2021 minima">9.7</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2020" headers="2020">2020</th>
+                <td headers="2020 media">13.8</td>
+                <td headers="2020 maxima">18.3</td>
+                <td headers="2020 minima">10.3</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2019" headers="2019">2019</th>
+                <td headers="2019 media">13.2</td>
+                <td headers="2019 maxima">17.7</td>
+                <td headers="2019 minima">9.6</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2018" headers="2018">2018</th>
+                <td headers="2018 media">13.1</td>
+                <td headers="2018 maxima">17.3</td>
+                <td headers="2018 minima">9.8</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2017" headers="2017">2017</th>
+                <td headers="2017 media">13.3</td>
+                <td headers="2017 maxima">17.8</td>
+                <td headers="2017 minima">9.8</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2016" headers="2016">2016</th>
+                <td headers="2016 media">13.2</td>
+                <td headers="2016 maxima">17.7</td>
+                <td headers="2016 minima">9.9</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2015" headers="2015">2015</th>
+                <td headers="2015 media">13.4</td>
+                <td headers="2015 maxima">18.1</td>
+                <td headers="2015 minima">10.1</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2014" headers="2014">2014</th>
+                <td headers="2014 media">13.5</td>
+                <td headers="2014 maxima">18.2</td>
+                <td headers="2014 minima">10.2</td>
+            </tr>
+            <tr>
+                <th scope="row" id="2013" headers="2013">2013</th>
+                <td headers="2013 media">12.3</td>
+                <td headers="2013 maxima">16.8</td>
+                <td headers="2013 minima">9.0</td>
+            </tr>
+        </table>
+    </aside>
+</body>
+</html>
